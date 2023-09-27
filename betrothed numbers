@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    long long int num1,num2,till,sum1,sum2,i;
+    scanf("%lld %lld",&num1,&num2);
+    till=num1/2;
+    for(i=1;i<=till;i++){
+        if(num1%i==0){
+            sum1+=i;
+        }
+    }
+    till=num2/2;
+    for(i=1;i<=till;i++){
+        if(num2%i==0){
+            sum2+=i;
+        }
+    }
+    if(num1+1==sum2 && num2+1==sum1){
+        printf("betrothed numbers");
+    }
+    else{
+        printf("Not betrothed numbers");
+    }
+    
+    
+
+    return 0;
+}
+
